@@ -27,7 +27,7 @@ Values are held-out R² expressed as percentages, measuring prediction of access
 
 The earlier CNN used a larger catalog of 108,843 regions, a different architecture, and a different training procedure. Its stronger performance shows additional predictive information in sequence, but does not identify which changes explain its advantage. As a future experiment, I would like to test additional CNN architectures and regularization strengths using reference sequence only, and compare them with linear models that capture the spacing and co-occurrence of motif patterns.
 
-## What we learned
+## What I learned
 
 - Motif and 5-mer summaries modestly predict average accessibility differences between regions. Wider sequence context did not improve the linear models, and the matched CNNs performed close to the baseline.
 - SNP-based genotype-specific sequences provided essentially no overall improvement versus just using the reference. None of the tested models recovered appreciable accessibility differences between genotypes within a fixed region.
