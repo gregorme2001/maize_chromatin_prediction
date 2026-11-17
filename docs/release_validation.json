@@ -4,7 +4,7 @@
   "total_bytes": 7895185,
   "scientific_code_tests_configs_unchanged": true,
   "author_report_prose_unchanged": true,
-  "full_report_PDF_intentionally_excluded": true,
+  "full_report_PDF_intentionally_excluded": false,
   "one_page_PDF_page_count": 1,
   "local_document_links_valid": true,
   "no_raw_data_or_checkpoint_binaries": true,
@@ -19,5 +19,13 @@
   },
   "figure_regeneration": "Both report figure builders and one-page builder completed from exported summaries",
   "CI_status": "Workflow supplied; remote execution not yet performed",
-  "GitHub_status": "Not yet published; account connection required"
+  "GitHub_status": "Not yet published; account connection required",
+  "author_report_pdf": {
+    "path": "docs/Maize_ATAC_seq_summary.pdf",
+    "sha256": "4f2a6a75be5781b1e7bcbfe9ea025615beb5d9f73b3bd459d041ab043dca2aa2",
+    "bytes": 708078,
+    "added_utc": "2026-11-17T03:16:44.802923+00:00",
+    "unchanged_from_author_supplied_file": true
+  },
+  "summary_status": "Author-edited Markdown is current; original generated one-page PDF predates these edits."
 }

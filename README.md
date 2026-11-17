@@ -54,9 +54,10 @@ prediction does not contradict caQTL associations.
 
 ## Read and reproduce
 
-- [One-page summary (PDF)](docs/project_summary.pdf)
-- [Full report source — working draft](docs/research_report.tex): the compiled
-  report PDF will be added after author review.
+- [Project summary](docs/project_summary.md)
+- [Full report (PDF)](docs/Maize_ATAC_seq_summary.pdf)
+- [Earlier report source draft](docs/research_report.tex): this source predates
+  the supplied PDF; the PDF is the current report.
 - [Methods and metric definitions](docs/methods.md)
 - [Reproduction guide](docs/reproduction.md) and [data sources](docs/data_sources.md)
 - [Published result tables and training-overlap audit](results/README.md)
@@ -68,7 +69,6 @@ python -m pip install -e '.[dev,preparation,scoring]'
 python -m pytest -q
 python scripts/build_research_report_figures.py
 python scripts/build_cnn_report_figures.py
-python scripts/build_project_summary.py
 ```
 
 Tests and figure generation need no raw data downloads or training. Neural tests

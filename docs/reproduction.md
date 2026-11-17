@@ -1,7 +1,7 @@
 # Reproduction and repository layout
 
-There are two distinct levels of reproduction. **Tests, figures and the one-page
-summary work from this clone without raw datasets.** Repeating sequence scoring
+There are two distinct levels of reproduction. **Tests and report-figure
+generation work from this clone without raw datasets.** Repeating sequence scoring
 or model training requires external data and the generated intermediate caches
 listed below. Historical prerequisites have been preserved rather than silently
 changing the completed experiment to manufacture a fresh-clone training command.
@@ -17,15 +17,15 @@ python -m pip install -e '.[dev,preparation,scoring]'
 python -m pytest -q
 python scripts/build_research_report_figures.py
 python scripts/build_cnn_report_figures.py
-python scripts/build_project_summary.py
 ```
 
 These commands do not train, download data or recompute motif scores. Tests use
 synthetic inputs; R/Torch checks skip if their optional runtimes are unavailable.
 The figure generators verify the published sample counts and result tables.
 
-- `docs/research_report.tex`: latest author source, still a working draft. The
-  compiled report PDF is intentionally withheld pending the author's reread.
+- `docs/Maize_ATAC_seq_summary.pdf`: author-supplied report approved for inclusion.
+- `docs/research_report.tex`: earlier author source draft; it may differ from the PDF.
+- `docs/project_summary.md`: current author-edited project summary.
 - `docs/figures/`: exported report figures in PDF/PNG and the linear-results table.
 - `results/`: selected small scientific outputs and frozen split/config records.
 - `src/maize_regulatory/`: scientific implementations and necessary shared helpers.
@@ -119,5 +119,10 @@ affect stochastic CNN fitting even when identities and settings are unchanged.
 Use your LaTeX distribution to compile `docs/research_report.tex` from the root
 or from `docs/`. The public copy only fixes the table-file lookup so both layouts
 work; the author's paragraphs are unchanged. Upload the table and referenced
-PDF/PNG figures when using Overleaf. The author will add the reviewed report PDF
-later; no compiled full report is distributed in this initial preparation.
+PDF/PNG figures when using Overleaf. The author-supplied PDF is already included as
+`docs/Maize_ATAC_seq_summary.pdf`. The retained source draft predates it and
+should not be treated as an exact source for the supplied PDF.
+
+The current project summary is author-edited Markdown. The older
+`build_project_summary.py` script contains the initial summary template and
+would overwrite those edits; do not run it on the current summary.
