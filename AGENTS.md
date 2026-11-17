@@ -35,6 +35,6 @@ reference-only CNNs used the 108,843-ACR catalog and are a separate comparison.
   Do not download genomes, scan the full motif catalog or train CNNs in tests.
 - Raw data, phenotype values, sequences, feature arrays, credentials and model
   binaries are excluded from Git. Do not copy the original exploratory history.
-- The user supplied and approved `docs/Maize_ATAC_seq_summary.pdf` for publication.
+- The user supplied and approved `Maize_ATAC_seq_summary.pdf` for publication.
   Preserve this PDF exactly. The retained TeX source is an earlier draft; do not
   claim it reproduces the supplied PDF. Preserve the author's report wording.

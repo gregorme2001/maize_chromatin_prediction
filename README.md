@@ -1,80 +1,44 @@
 # Predicting maize chromatin accessibility from DNA sequence
 
-**Research question:** How much of chromatin accessibility at an unseen genomic
-region can be predicted from local DNA sequence, and does adding genotype-specific
-SNPs help? This repository accompanies a research report by Gregory Orme using
-the maize single-nucleus ATAC-seq dataset of
-[Marand et al. (2025)](https://doi.org/10.1126/science.ads6601).
+Gregory Orme | November 2026
 
-The main benchmark contains **9,666 accessible chromatin regions (ACRs),
-137 development genotypes, and 495,900 ACR–genotype observations**, restricted
-to cortex nuclei. Libraries are pooled within genotype. The target is each
-ACR's detections per million detections across all 108,843 source ACRs (CPM).
-This measures relative accessibility, rather than the fraction of nuclei
-detecting a region.
+**[Read the full report (PDF)](Maize_ATAC_seq_summary.pdf)**
+
+## Question and approach
+
+How much of the variation in chromatin accessibility across genomic regions in maize can local sequence explain? Using Marand et al. (2025)'s single-nucleus ATAC-seq data, I designed summary statistics aggregating each region's resemblance to transcription factor motifs and generic five-base sequence patterns (5-mers). I used ridge regression with cross-validation to test whether these scores predicted accessibility at unseen genomic regions.
+
+I compared reference sequence with SNP-derived genotype-specific sequences, and the core region's sequence with a larger window containing surrounding DNA. I also compared these predictions with convolutional neural networks  and a baseline using only GC content, region length, chromosome, and genetic ancestry.
+
+## Evaluation
+
+The matched comparison used approximately 9,700 genomic regions across 137 maize genotypes, restricted to cortex nuclei. I evaluated prediction on held-out genomic regions, keeping neighboring regions together and choosing model settings using training data only. This tests prediction at new regions within the genotypes studied.
 
 ## Results
 
-| Model | ACR–genotype RMSE ↓ | ACR-average RMSE ↓ | ACR-average R² ↑ |
-|---|---:|---:|---:|
-| GC/length/chromosome/ancestry baseline | 7.7485 | 4.8881 | 0.0273 |
-| Best observed motif ridge: personalized core | 7.5558 | 4.5257 | 0.1662 |
-| Best observed matched CNN: B73 2,000 bp | 7.7358 | 4.8581 | 0.0392 |
-| Earlier CNN: B73 2,048 bp, larger training catalog | **7.3244** | **4.0912** | **0.3186** |
+| Model | Variation in average accessibility explained |
+|---|---:|
+| Baseline covariates only | 2.7% |
+| Best motif-based ridge regression | 16.6% |
+| Best CNN on the matched dataset | 3.9% |
+| Earlier CNN using more training regions | 31.9% |
 
-RMSE is in CPM. Every row evaluates the **same observations** using outer
-held-out genomic-block predictions. The earlier CNN used a larger training
-catalog, a different architecture and three-network averaging; its row is a
-retrospective comparison, not a controlled architecture comparison. Its
-evaluated ACRs were excluded from the corresponding prediction networks'
-training sets, verified against saved checkpoints and fold records.
+Values are held-out R² expressed as percentages, measuring prediction of accessibility averaged across genotypes at each region. All models were scored on the same held-out observations.
 
-- Sequence summaries modestly predict differences in average accessibility
-  **between ACRs**. The best ridge model reduces MSE by 4.91% versus baseline.
-- SNP-substituted inputs provide essentially no overall improvement over B73
-  for the matched models. **Within-ACR genotype-deviation R² stays near zero.**
-- The earlier padded CNN improves on the best current ridge model by 6.03% in
-  MSE. Why it outperforms the matched CNNs remains unresolved.
+The earlier CNN used a larger catalog of 108,843 regions, a different architecture, and a different training procedure. Its stronger performance shows additional predictive information in sequence, but does not identify which changes explain its advantage. As a future experiment, I would like to test additional CNN architectures and regularization strengths using reference sequence only, and compare them with linear models that capture the spacing and co-occurrence of motif patterns.
 
-## Design and limits
+## What we learned
 
-The 13 linear models compare TF-motif scores, five-mer quasi-motif scores and
-their combination, using B73 or SNP-substituted DNA and core or 2,000-bp inputs.
-Four matched CNNs use the same sequence-source/extent combinations. Five outer
-and three inner folds keep chromosome-specific 5-Mb blocks together; supervised
-scaling, tuning and fitting use training observations only. This tests **new
-regions within the studied genotypes**, not new genotypes. The permanent
-30-genotype holdout is unused.
+- Motif and 5-mer summaries modestly predict average accessibility differences between regions. Wider sequence context did not improve the linear models, and the matched CNNs performed close to the baseline.
+- SNP-based genotype-specific sequences provided essentially no overall improvement versus just using the reference. None of the tested models recovered appreciable accessibility differences between genotypes within a fixed region.
+- The earlier CNN outperformed the best ridge model in all five held-out folds, supporting further investigation of reference-sequence prediction across more regions.
 
-SNP-call completeness restricts eligibility; reconstructed sequences omit
-indels, structural variants and unlisted SNPs. CPM is compositional, and the
-observed library variation does not isolate genetic and technical variance.
-Prediction does not establish TF binding or causality, and weak SNP-based
-prediction does not contradict caQTL associations.
+## Scope and limitations
 
-## Read and reproduce
+The response measures relative accessibility in maize cortex nuclei. Incomplete genotype-specific sequences and measurement variation may limit genotype-level prediction. These observational results do not establish TF binding or causal regulatory effects.
 
-- [Project summary](docs/project_summary.md)
-- [Full report (PDF)](docs/Maize_ATAC_seq_summary.pdf)
-- [Earlier report source draft](docs/research_report.tex): this source predates
-  the supplied PDF; the PDF is the current report.
-- [Methods and metric definitions](docs/methods.md)
-- [Reproduction guide](docs/reproduction.md) and [data sources](docs/data_sources.md)
-- [Published result tables and training-overlap audit](results/README.md)
+https://github.com/gregorme2001/maize_chromatin_prediction
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -e '.[dev,preparation,scoring]'
-python -m pytest -q
-python scripts/build_research_report_figures.py
-python scripts/build_cnn_report_figures.py
-```
+Source study: https://doi.org/10.1126/science.ads6601
 
-Tests and figure generation need no raw data downloads or training. Neural tests
-require the optional `neural` dependencies. Full numerical reproduction requires
-external inputs, generated caches and additional computation; it is **not** a
-single-command fresh-clone rebuild. Large data, sequence/feature arrays and model
-checkpoints are excluded. The original exploratory workspace is preserved
-separately; [the export inventory](docs/publication_inventory.json) records the
-retained scientific source files and checksums.
+[Code and reproduction instructions](docs/getting_started.md)

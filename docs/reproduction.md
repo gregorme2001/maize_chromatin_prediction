@@ -23,9 +23,10 @@ These commands do not train, download data or recompute motif scores. Tests use
 synthetic inputs; R/Torch checks skip if their optional runtimes are unavailable.
 The figure generators verify the published sample counts and result tables.
 
-- `docs/Maize_ATAC_seq_summary.pdf`: author-supplied report approved for inclusion.
+- `Maize_ATAC_seq_summary.pdf`: author-supplied report approved for inclusion.
 - `docs/research_report.tex`: earlier author source draft; it may differ from the PDF.
-- `docs/project_summary.md`: current author-edited project summary.
+- `README.md`: current author-edited project summary.
+- `docs/getting_started.md`: setup and reproduction links.
 - `docs/figures/`: exported report figures in PDF/PNG and the linear-results table.
 - `results/`: selected small scientific outputs and frozen split/config records.
 - `src/maize_regulatory/`: scientific implementations and necessary shared helpers.
@@ -120,9 +121,8 @@ Use your LaTeX distribution to compile `docs/research_report.tex` from the root
 or from `docs/`. The public copy only fixes the table-file lookup so both layouts
 work; the author's paragraphs are unchanged. Upload the table and referenced
 PDF/PNG figures when using Overleaf. The author-supplied PDF is already included as
-`docs/Maize_ATAC_seq_summary.pdf`. The retained source draft predates it and
+`Maize_ATAC_seq_summary.pdf`. The retained source draft predates it and
 should not be treated as an exact source for the supplied PDF.
 
-The current project summary is author-edited Markdown. The older
-`build_project_summary.py` script contains the initial summary template and
-would overwrite those edits; do not run it on the current summary.
+The project summary is the author-edited root `README.md`. Edit it directly;
+the obsolete generated summary exports and template generator have been removed.

@@ -448,5 +448,18 @@
     "scripts/compare_saved_cnn.py",
     "scripts/verify_cnn_training_overlap.py"
   ],
-  "original_existing_files_modified": false
+  "original_existing_files_modified": false,
+  "presentation_layout_update": {
+    "canonical_summary": "README.md",
+    "author_summary_prose_preserved": true,
+    "author_report_pdf": "Maize_ATAC_seq_summary.pdf",
+    "author_report_pdf_sha256": "4f2a6a75be5781b1e7bcbfe9ea025615beb5d9f73b3bd459d041ab043dca2aa2",
+    "technical_setup": "docs/getting_started.md",
+    "obsolete_generated_presentation_files_removed": [
+      "docs/project_summary.pdf",
+      "docs/project_summary.png",
+      "docs/project_summary_provenance.json",
+      "scripts/build_project_summary.py"
+    ]
+  }
 }
