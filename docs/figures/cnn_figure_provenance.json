@@ -1,0 +1,16 @@
+{
+  "purpose": "Report figures from existing out-of-fold predictions; no fitting or model selection",
+  "n_ACRs": 9666,
+  "n_ACR_genotype_observations": 495900,
+  "figure_1": "Matched training cohort and evaluation observations",
+  "figure_2": "Matched evaluation observations only; earlier training cohort is larger",
+  "inputs_sha256": {
+    "results/sampled_cnn_benchmark/metrics.csv": "4f3e7f4a04ea747738c5ada811b6c54551a01479096cebc19b9dd6f8ecfa8387",
+    "results/sampled_cnn_benchmark/completion.json": "d56bb9c6fa890026edaff92e304d606182ae82d8b05de77b76c56af8e6b839d0",
+    "results/sampled_linear_benchmark/metrics.csv": "0deafa7e02c88d1450b8bde58b3fc6c5e9e703b26cb8a956be7a192695e00312",
+    "results/cnn_saved_prediction_comparison/metrics.csv": "3be39c95d65d0e4a7686a646dd53fecdb9cab9aeb45b353c2bf3f2b49804f30e",
+    "results/cnn_saved_prediction_comparison/fold_metrics.csv": "8e1dddaacae50fd3fe8b14ec7978694405d4ac10361f2e4ca0f3226142e299f0",
+    "results/cnn_saved_prediction_comparison/audit.json": "0db0374e54e389cb6d15905caa9c52331e2a4f97ff28f54efd5c687d6c7ad9b6"
+  },
+  "generator_sha256": "26691a74ac07f3ce8eaec2ac3ad92aa2e08c8a36ddd5b217b4925f678fb02c60"
+}

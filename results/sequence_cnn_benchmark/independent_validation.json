@@ -1,0 +1,41 @@
+{
+  "frozen_folds_equal": true,
+  "genotype_and_acr_identity_checks": true,
+  "all_30_refit_training_row_hashes_match": true,
+  "all_refit_scaling_train_only": true,
+  "all_predictions_reconstruct": true,
+  "metrics": [
+    {
+      "model": "acr_only",
+      "n_pairs": 14911491,
+      "reconstructed_pair_rmse": 7.465763529557796,
+      "reconstructed_mean_rmse": 4.35483787509574,
+      "max_ancestry_difference_from_prior_ridge": 1.5814571874273042e-12,
+      "max_saved_mean_vs_seed_ensemble_difference": 0.0
+    },
+    {
+      "model": "context_2048",
+      "n_pairs": 14911491,
+      "reconstructed_pair_rmse": 7.231070491709789,
+      "reconstructed_mean_rmse": 3.9389552288860985,
+      "max_ancestry_difference_from_prior_ridge": 1.5814571874273042e-12,
+      "max_saved_mean_vs_seed_ensemble_difference": 0.0
+    }
+  ],
+  "numerical_cross_checks": [
+    {
+      "model": "acr_only",
+      "n": 32,
+      "max_abs_cpu_float32_vs_mps_amp_cpm": 0.0037794113159179688
+    },
+    {
+      "model": "context_2048",
+      "n": 32,
+      "max_abs_cpu_float32_vs_mps_amp_cpm": 0.004084587097167969
+    }
+  ],
+  "original_environment_tests": "147 passed; 2 Torch-dependent modules skipped",
+  "native_neural_tests": "5 passed",
+  "no_DTS_read": true,
+  "no_holdout_values_read": true
+}

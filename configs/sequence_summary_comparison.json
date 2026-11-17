@@ -1,0 +1,16 @@
+{
+  "cell_state": "cortex",
+  "min_pooled_nuclei": 50,
+  "block_width_bp": 5000000,
+  "outer_splits": 5,
+  "inner_splits": 3,
+  "seed": 42,
+  "alphas": [0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000],
+  "fixed_gc_knots": [0, 0.25, 0.5, 0.75, 1],
+  "primary_baseline": "linear",
+  "sensitivity_baseline": "gc_spline",
+  "reference_only": true,
+  "response": "pooled_raw_CPM",
+  "feature_kinds": ["kmer", "frequency", "softlme", "motif"],
+  "word_pwm_alpha": 0.99
+}

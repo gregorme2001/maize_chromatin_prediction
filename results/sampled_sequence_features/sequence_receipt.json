@@ -1,0 +1,19 @@
+{
+  "seconds": 9.64132491700002,
+  "core_patterns_including_B73": 18627,
+  "context_patterns_including_B73": 68676,
+  "all_matched_pair_core_context_sequences_agree": true,
+  "all_selected_calls_homozygous": true,
+  "all_cached_REF_match_B73": true,
+  "sequence_class_counts_match_census": true,
+  "outputs": {
+    "data/intermediate/sampled_sequence_features/core_patterns.parquet": "13af01ee5d843be651212e0cb6409dc8e717cbfdb9449452d37c1f36b78ca617",
+    "data/intermediate/sampled_sequence_features/context_patterns.parquet": "a716dcc9140ea54ef04bb0a85a4841863c57d4de7b04fa664a1a7d24e56e6457",
+    "data/intermediate/sampled_sequence_features/context_B73_pattern_ids.npy": "0b3a3ac9a695759e0d693e348f2ab4232e45bc4056624410be1b0a7ded18ca70",
+    "data/intermediate/sampled_sequence_features/context_pattern_ids.npy": "7ea746c31de3a4aa9e7ca2d7149c155c9e78a67ca2e6f23b1d83257f153fa4e2",
+    "data/intermediate/sampled_sequence_features/core_B73_pattern_ids.npy": "b03868174de6980352894276bf480e0c1c4af07654dd036330371391a07ff4ee",
+    "data/intermediate/sampled_sequence_features/core_pattern_ids.npy": "5d234875c8e3ceb74ec0058e1ca91ad0b317caf510719266927807c4c125eb2c",
+    "data/intermediate/sampled_sequence_features/context_to_core_pattern.npy": "ae04bc8a42e5e8fe99036ab0a7da39e29bd38f7b114bc6d81709639585ef4a38",
+    "results/sampled_sequence_features/feature_lookup.parquet": "6fc0043e1ab46c5ba68d12522c82c87fb13a15a6b5be695ce08806b163bc396f"
+  }
+}

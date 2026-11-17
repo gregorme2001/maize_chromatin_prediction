@@ -1,0 +1,23 @@
+{
+  "scope": "Selected publication copy; original workspace preserved",
+  "total_files": 405,
+  "total_bytes": 7895185,
+  "scientific_code_tests_configs_unchanged": true,
+  "author_report_prose_unchanged": true,
+  "full_report_PDF_intentionally_excluded": true,
+  "one_page_PDF_page_count": 1,
+  "local_document_links_valid": true,
+  "no_raw_data_or_checkpoint_binaries": true,
+  "primary_tests": {
+    "passed": 83,
+    "skipped_Torch_modules": 4,
+    "GNU_Make_and_R_dependencies": "existing project runtimes used explicitly"
+  },
+  "neural_tests": {
+    "passed": 13,
+    "environment": "original native neural environment; publication src on PYTHONPATH"
+  },
+  "figure_regeneration": "Both report figure builders and one-page builder completed from exported summaries",
+  "CI_status": "Workflow supplied; remote execution not yet performed",
+  "GitHub_status": "Not yet published; account connection required"
+}

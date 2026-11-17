@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "timings": [
+    {
+      "kind": "core",
+      "n_patterns": 18627,
+      "seconds_this_invocation": 27.214376250019995,
+      "minimum_TF_score": -89.43083953857422,
+      "maximum_TF_score": 54.829811096191406,
+      "feature_files": {
+        "TF": {
+          "shape": [
+            18627,
+            927
+          ],
+          "sha256": "e192074becc38a08dce68340ec4694ce3dbbb5bb6eb59cb555145cf1ca5523f4"
+        },
+        "word": {
+          "shape": [
+            18627,
+            512
+          ],
+          "sha256": "8660f240a7e62c51541dfc63c1187e81e652ddc94a17377147a24c2beec2079d"
+        }
+      }
+    },
+    {
+      "kind": "context",
+      "n_patterns": 68676,
+      "seconds_this_invocation": 994.0272664999939,
+      "minimum_TF_score": -74.15855407714844,
+      "maximum_TF_score": 55.06614303588867,
+      "feature_files": {
+        "TF": {
+          "shape": [
+            68676,
+            927
+          ],
+          "sha256": "f8517074aa692cfaa8f909ac1ce7cad490f6b37ede82b983241c30b47dea599f"
+        },
+        "word": {
+          "shape": [
+            68676,
+            512
+          ],
+          "sha256": "4abece5109a3ca88f5419983a618831f40d5a8a3292020c80a904564e9039140"
+        }
+      }
+    },
+    {
+      "kind": "flanks",
+      "n_patterns": 68676,
+      "seconds_this_invocation": 928.7743975829799,
+      "minimum_TF_score": -73.98503112792969,
+      "maximum_TF_score": 55.2035026550293,
+      "feature_files": {
+        "TF": {
+          "shape": [
+            68676,
+            927
+          ],
+          "sha256": "2db4a583d423b3f23c42df00cf4c3014321aec53c6428a014c283cf4e1013024"
+        },
+        "word": {
+          "shape": [
+            68676,
+            512
+          ],
+          "sha256": "73811b08134d3f157f4570e5207023adeddd2cb14c208bfd5db9a77aeddaf9c7"
+        }
+      }
+    }
+  ],
+  "model_fitted": false,
+  "source_score_definition_unchanged": true,
+  "no_threshold_or_score_clipping": true,
+  "output_dtype": "float32"
+}

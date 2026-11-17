@@ -1,0 +1,17 @@
+{
+  "response": "pooled_raw_cortex_CPM",
+  "sequence_sources": ["B73", "personalized"],
+  "sequence_extents": ["core", "context"],
+  "feature_sets": ["TF", "word", "both"],
+  "nuisance": "fixed_B73_core_GC_natural_spline4_linear_core_length_chromosome_ancestry10",
+  "fixed_gc_knots": [0, 0.25, 0.5, 0.75, 1],
+  "alphas": [0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000],
+  "include_exact_baseline_candidate": true,
+  "TF_penalty_multiplier": 1.0,
+  "compressed_word_penalty_multiplier": 0.5,
+  "fitting_weights": "equal_matched_pairs",
+  "subgroups": ["all", "core_variation_rich", "context_variation_rich"],
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "CNN": false
+}

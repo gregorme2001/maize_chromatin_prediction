@@ -1,0 +1,10 @@
+{
+  "purpose": "Presentation of existing frozen results only; no model fitting",
+  "sources_sha256": {
+    "results/sampled_linear_benchmark/metrics.csv": "0deafa7e02c88d1450b8bde58b3fc6c5e9e703b26cb8a956be7a192695e00312",
+    "results/sampled_linear_benchmark/personalization_comparisons.csv": "2d3656fdf36762a2fd167f5acd2a3af8ffdb0df93930fc6e4d779ae8059799bf",
+    "results/sampled_sequence_features/selected_acrs.parquet": "d5a3c697ba9bd38521e9ccde57a849acc981b07a8c62b167e139780d00780e81",
+    "results/cortex_cpm_variance/overview.png": "76daabe330a979205abe1a6469b20556bce7ff774ef455d5500bf9aa0e2f6b07"
+  },
+  "generator_sha256": "f48392fd6a603e664ce76d793d8ae9a7a259a6669f41bab2a6c60745cc655756"
+}

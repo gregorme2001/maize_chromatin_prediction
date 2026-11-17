@@ -1,0 +1,38 @@
+{
+  "panels": [
+    "B73_core",
+    "personalized_core",
+    "B73_context",
+    "personalized_context"
+  ],
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "candidate_l2": [
+    1e-05,
+    0.0001
+  ],
+  "architecture": {
+    "width": 64,
+    "depth": 3,
+    "dropout": 0.1,
+    "stem_pool": 8
+  },
+  "learning_rate": 0.001,
+  "batch_size": 512,
+  "max_epochs": 30,
+  "warmup_epochs": 15,
+  "patience": 8,
+  "inner_seed_base": 42000,
+  "outer_seed_base": 101000,
+  "refit_epoch_rule": "median_best_epoch_of_winning_candidate_inner_fits",
+  "precision": "float16_sequence_ops_float32_weights_and_loss",
+  "response": "unchanged_original_core_raw_cortex_CPM",
+  "weights": "equal_original_ACR_genotype_observations",
+  "job_order": "outer_fold_then_panel",
+  "CNN_core_indicator": false,
+  "reverse_complement_training": true,
+  "reverse_complement_prediction_average": true,
+  "nuisance_coefficients": "global_joint_unpenalized_25_term_basis",
+  "baseline_is_inner_candidate": false,
+  "outer_seeds_per_fit": 1
+}

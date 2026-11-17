@@ -1,0 +1,19 @@
+{
+  "source": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE273nnn/GSE273478/suppl/GSE273478_normalized_chromatin_accessibility_and_covariate_matrices.tar.gz",
+  "archive_member": "normalized_chromatin_accessibility_and_covariate_matrices/Merged_Genotype.INT_ACRs.08.08.2023.fastQTL.txt.bed.gz",
+  "header_sha256": "9f411fc570224fd5b3f41164413239110335d9efd4a10399ed505748cd05d2b8",
+  "matching_rule": "Legacy normalized names, exactly one phenotype row, published order",
+  "excluded_published_genotypes": [
+    "B73",
+    "ILLHY",
+    "YU796"
+  ],
+  "test_size": 30,
+  "random_state": 42,
+  "phenotype_values_read": false,
+  "identity_sha256": {
+    "published_genotypes.txt": "792eeb404381a195c344d97786a105c93e313d0f6b8dcfed32442062ebafbde1",
+    "analysis_genotypes.txt": "f9d64e1563d87ae9d9fec7379451256ee5ade310789f661001f468779c8789a3",
+    "holdout_genotypes.txt": "bcc1b19a6abc40fe827c519b819987f4630a47afc98046d0abac960daa6223c3"
+  }
+}

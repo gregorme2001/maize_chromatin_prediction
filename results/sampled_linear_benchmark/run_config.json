@@ -1,0 +1,100 @@
+{
+  "config": {
+    "response": "pooled_raw_cortex_CPM",
+    "sequence_sources": [
+      "B73",
+      "personalized"
+    ],
+    "sequence_extents": [
+      "core",
+      "context"
+    ],
+    "feature_sets": [
+      "TF",
+      "word",
+      "both"
+    ],
+    "nuisance": "fixed_B73_core_GC_natural_spline4_linear_core_length_chromosome_ancestry10",
+    "fixed_gc_knots": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "alphas": [
+      1e-06,
+      1e-05,
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1,
+      10,
+      100,
+      1000,
+      10000
+    ],
+    "include_exact_baseline_candidate": true,
+    "TF_penalty_multiplier": 1.0,
+    "compressed_word_penalty_multiplier": 0.5,
+    "fitting_weights": "equal_matched_pairs",
+    "subgroups": [
+      "all",
+      "core_variation_rich",
+      "context_variation_rich"
+    ],
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "CNN": false
+  },
+  "inputs": {
+    "results/sampled_sequence_features/selected_acrs.parquet": "d5a3c697ba9bd38521e9ccde57a849acc981b07a8c62b167e139780d00780e81",
+    "results/sampled_sequence_features/feature_lookup.parquet": "6fc0043e1ab46c5ba68d12522c82c87fb13a15a6b5be695ce08806b163bc396f",
+    "results/sampled_sequence_features/genotypes.csv": "e2e9aa936de49e0bcd0029a9cdcbaf14621ca53feaa2f5225981643093ca1793",
+    "results/sampled_sequence_features/sample_receipt.json": "eb8d20191e114bdd6d99684218d6811c8d5a415b4a64bcb566e559b63683387d",
+    "results/sampled_sequence_features/sequence_receipt.json": "856e328b17c2e02b1f9614e115ac6670e2105bf3da31d4080079ec157bf65485",
+    "results/sampled_sequence_features/scoring_receipt.json": "3cae5bd4ab0ef7dde54215c2290d2b924e098848c3666dc0e6cc8cf55b277ad0",
+    "results/sampled_sequence_features/feature_columns.json": "9a0fb365f07dabbeadb0a0e2eee3e9f12ab1081af12f79c9230fa71fd9eb2bb9",
+    "results/sampled_sequence_features/fold_manifest.json": "5f72c081f74147167298f4f53c884c1203cd10c4209e8de7debe4a36a4180399",
+    "data/intermediate/sampled_sequence_features/features/core_TF.npy": "e192074becc38a08dce68340ec4694ce3dbbb5bb6eb59cb555145cf1ca5523f4",
+    "data/intermediate/sampled_sequence_features/features/core_word.npy": "8660f240a7e62c51541dfc63c1187e81e652ddc94a17377147a24c2beec2079d",
+    "data/intermediate/sampled_sequence_features/features/context_TF.npy": "f8517074aa692cfaa8f909ac1ce7cad490f6b37ede82b983241c30b47dea599f",
+    "data/intermediate/sampled_sequence_features/features/context_word.npy": "4abece5109a3ca88f5419983a618831f40d5a8a3292020c80a904564e9039140",
+    "data/intermediate/reference_cortex/counts.int32": "a44745050268a019079f1ab9bbd7decdfeaddb37e0c30ca943c0450144e5717f",
+    "data/intermediate/reference_cortex/receipt.json": "5ef4b018d1ffd68200e03148ace489f82448946169a49ccec5d6aba0fb2056df",
+    "data/intermediate/cells/acr_index.csv": "6abca2e175389fbf5d40c7ac1606d2e8cdbe43f6d4f121151e883713a2fc022c",
+    "data/maize_ancestry_pcs.parquet": "fee45e45d81dfd19504f4996884cd1d81a56b0ad974b609f03e27462f1e191e7",
+    "results/sequence_cnn_benchmark/genotype_coverage.csv": "4f9ee2ee2df3436dd4899ff31328d829725d4b1ec2309bc6b6527e749ae76f83"
+  },
+  "code": {
+    "scripts/analyze_sampled_linear.py": "1fd3d7a306cc40d366274149e68958cfa3a9f9458e11cf556d6d478507940046",
+    "src/maize_regulatory/sampled_linear.py": "8e329ed974da2ad4a108bfbdbfaf89e5dcb0c9993184f8fec5ac6e6c645602d4",
+    "src/maize_regulatory/pooled_sequence.py": "ebdc5e44ddd101688fd980def4f1bc6cd5d41f8bd2f9d9cc58b5a0f1856777e8",
+    "src/maize_regulatory/sampled_linear_report.py": "a14318dbacd62784a332889ba72e97dd7b81a257a1a457a1c2e6fd6507e6571b"
+  },
+  "numpy": "2.5.4",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "n_pairs": 495900,
+  "n_ACRs": 9666,
+  "n_genotypes": 137,
+  "n_covariates": 25,
+  "raw_CPM_values_independently_verified": 495900,
+  "nuisance_matches_existing_basis": true,
+  "holdout_or_DTS_read": false,
+  "model_names": [
+    "baseline",
+    "B73_core_TF",
+    "B73_core_word",
+    "B73_core_both",
+    "B73_context_TF",
+    "B73_context_word",
+    "B73_context_both",
+    "personalized_core_TF",
+    "personalized_core_word",
+    "personalized_core_both",
+    "personalized_context_TF",
+    "personalized_context_word",
+    "personalized_context_both"
+  ]
+}

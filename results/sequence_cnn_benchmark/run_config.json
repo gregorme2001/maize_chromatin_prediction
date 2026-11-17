@@ -1,0 +1,41 @@
+{
+  "config": {
+    "max_epochs": 6,
+    "patience": 3,
+    "batch_size": 1024,
+    "ensemble_seeds": [
+      101,
+      202,
+      303
+    ],
+    "candidates": [
+      {
+        "width": 32,
+        "depth": 2,
+        "dropout": 0.1,
+        "learning_rate": 0.003,
+        "l2": 1e-05
+      },
+      {
+        "width": 32,
+        "depth": 2,
+        "dropout": 0.1,
+        "learning_rate": 0.003,
+        "l2": 0.0001
+      }
+    ],
+    "outer_splits": 5,
+    "inner_splits": 3,
+    "sequence_kinds": [
+      "acr_only",
+      "context_2048"
+    ],
+    "planning_note": "Bounded preliminary GPU benchmark; compact network and finite epoch cap to meet requested runtime; no outer-directed selection"
+  },
+  "device": "mps",
+  "torch": "2.15.0",
+  "code_sha256": {
+    "scripts/analyze_sequence_cnn.py": "d8c43f958a90082e54c6a6945ce07dff0cd1d3e9e391b92a59f2434dca87204c",
+    "src/maize_regulatory/sequence_cnn.py": "6e3063c6147acc2adfcae6fac52043b4a77aa69468ac9d30a6ce36aa7144dc19"
+  }
+}

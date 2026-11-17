@@ -1,0 +1,31 @@
+{
+  "all_13_models_have_complete_finite_out_of_fold_predictions": true,
+  "independently_reconstructed_pair_predictions": 2080,
+  "maximum_prediction_difference": 8.881784197001252e-15,
+  "independent_joint_normal_equation_checks": [
+    {
+      "model": "B73_core_both",
+      "outer_fold": 0,
+      "max_raw_coefficient_difference": 8.444811072649827e-09
+    },
+    {
+      "model": "B73_context_both",
+      "outer_fold": 0,
+      "max_raw_coefficient_difference": 2.86776380420406e-10
+    },
+    {
+      "model": "personalized_core_both",
+      "outer_fold": 0,
+      "max_raw_coefficient_difference": 2.6980069289805897e-09
+    },
+    {
+      "model": "personalized_context_both",
+      "outer_fold": 0,
+      "max_raw_coefficient_difference": 8.288068009676408e-10
+    }
+  ],
+  "all_60_sequence_refits_direct_pair_MSE_matches_moment_MSE": true,
+  "all_raw_CPM_pairs_reconstructed_and_verified": 495900,
+  "permanent_holdout_or_DTS_used": false,
+  "CNN_trained": false
+}

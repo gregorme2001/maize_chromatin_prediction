@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "n_ACRs": 9666,
+    "n_genotypes": 137,
+    "n_pairs": 495900,
+    "blocks": 432,
+    "chromosomes": 10,
+    "core_variation_rich_ACRs": 2167,
+    "context_variation_rich_ACRs": 4305,
+    "ACRs_with_no_listed_context_SNPs": 1755,
+    "numpy_version_used_for_draw": "2.5.4",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "sample_is_frozen": true,
+    "no_response_or_prediction_values_used": true
+  },
+  "outputs": {
+    "results/sampled_sequence_features/selected_acrs.parquet": "d5a3c697ba9bd38521e9ccde57a849acc981b07a8c62b167e139780d00780e81",
+    "results/sampled_sequence_features/selected_acrs.csv": "e6fb6ef0696298e2ec737ba6bc8e5fa9b72b9b4da741eb39309a43e0f45eee13",
+    "results/sampled_sequence_features/pair_manifest.parquet": "26f458857bc3774831fcd3dd766a4f870772ed4df5e841ad9e6bdab1897591d3",
+    "results/sampled_sequence_features/genotypes.csv": "e2e9aa936de49e0bcd0029a9cdcbaf14621ca53feaa2f5225981643093ca1793",
+    "results/sampled_sequence_features/fold_manifest.json": "5f72c081f74147167298f4f53c884c1203cd10c4209e8de7debe4a36a4180399",
+    "data/intermediate/sampled_sequence_features/common_pair_mask.npy": "179e881d0ac35c1a507abfbb4b143c0f12afd546691fccb2a752d554f1328f84"
+  }
+}

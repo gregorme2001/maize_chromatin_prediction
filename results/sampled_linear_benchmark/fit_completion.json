@@ -1,0 +1,23 @@
+{
+  "complete": true,
+  "models": [
+    "baseline",
+    "B73_core_TF",
+    "B73_core_word",
+    "B73_core_both",
+    "B73_context_TF",
+    "B73_context_word",
+    "B73_context_both",
+    "personalized_core_TF",
+    "personalized_core_word",
+    "personalized_core_both",
+    "personalized_context_TF",
+    "personalized_context_word",
+    "personalized_context_both"
+  ],
+  "seconds_this_invocation": 39.63250170799438,
+  "n_pairs": 495900,
+  "prediction_sha256": "7e7d65064f1892de9522c38775092c8f92673af94300a84b5aea655dfc293ddf",
+  "no_CNN": true,
+  "holdout_or_DTS_read": false
+}

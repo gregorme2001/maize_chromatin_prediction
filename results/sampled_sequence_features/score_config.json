@@ -1,0 +1,7 @@
+{
+  "chunk_size": 256,
+  "input_state_sha256": "3b7ec3493f3316b57216c669d9581cbef6b660264f80a9f83d16ee45197fc978",
+  "sequence_receipt_sha256": "856e328b17c2e02b1f9614e115ac6670e2105bf3da31d4080079ec157bf65485",
+  "numpy_version": "2.2.6",
+  "platform": "macOS-10.16-x86_64-i386-64bit"
+}

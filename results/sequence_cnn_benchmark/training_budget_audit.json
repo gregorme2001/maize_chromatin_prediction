@@ -1,0 +1,23 @@
+{
+  "n_inner_fits": 60,
+  "n_best_at_epoch_cap": 42,
+  "epoch_cap": 6,
+  "n_outer_refit_models": 30,
+  "timing": {
+    "device": "mps",
+    "batch_size": 1024,
+    "rows": [
+      {
+        "kind": "acr_only",
+        "seconds_per_epoch": 2.2453278955072165,
+        "n_parameters": 56081
+      },
+      {
+        "kind": "context_2048",
+        "seconds_per_epoch": 5.346631166496081,
+        "n_parameters": 56081
+      }
+    ],
+    "role": "Training-only runtime planning on first inner split; no outer outcomes examined"
+  }
+}

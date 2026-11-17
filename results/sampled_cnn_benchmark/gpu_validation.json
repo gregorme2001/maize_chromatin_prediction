@@ -1,0 +1,8 @@
+{
+  "actual_GPU_available": true,
+  "atomic_model_optimizer_scaler_checkpoint": true,
+  "checkpoint_next_update_max_difference": 0.0,
+  "simulated_gradient_overflow_skipped_without_weight_update": true,
+  "native_neural_tests_passed": 13,
+  "scope": "Synthetic correctness/recovery check, not maize performance"
+}

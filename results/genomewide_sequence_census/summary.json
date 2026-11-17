@@ -1,0 +1,34 @@
+{
+  "n_ACRs": 108843,
+  "n_genotypes": 137,
+  "total_possible_pairs": 14911491,
+  "chromosomes": 10,
+  "width_bp": 2000,
+  "occupied_5Mb_blocks": 432,
+  "source_context_SNPs": 6589194,
+  "all_context_SNP_REF_match_B73": true,
+  "census_complete": true,
+  "phenotype_or_accessibility_values_read": false,
+  "holdout_analyzed": false,
+  "models_fitted": false,
+  "final_cohort_sampled": false,
+  "total_chromosome_processing_seconds": 308.2232290410029,
+  "core": {
+    "available_pairs": 10892971,
+    "available_fraction": 0.7305085051521676,
+    "ACRs_with_any_pair": 108803,
+    "median_genotypes_per_ACR": 108.0,
+    "ACRs_with_two_sequences": 96203,
+    "distinct_available_sequences": 484270,
+    "non_B73_pairs": 4068868
+  },
+  "context": {
+    "available_pairs": 1623866,
+    "available_fraction": 0.1089003105055021,
+    "ACRs_with_any_pair": 101342,
+    "median_genotypes_per_ACR": 7.0,
+    "ACRs_with_two_sequences": 73971,
+    "distinct_available_sequences": 395990,
+    "non_B73_pairs": 573691
+  }
+}

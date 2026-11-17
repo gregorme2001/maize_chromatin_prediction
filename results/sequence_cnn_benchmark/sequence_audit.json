@@ -1,0 +1,8 @@
+{
+  "context_width": 2048,
+  "core_padded_width": 1280,
+  "clipped_windows": 40,
+  "ambiguous_context_bases": 2222,
+  "all_acr_sequences_match_fasta": true,
+  "flank_rule": "Clip at sequence-only inter-ACR gaps separating occupied frozen 5Mb blocks; pad with unknown bases; preserve every ACR; no shared flank DNA across blocks"
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the original data study and this research report when using this work."
+type: software
+title: "Predicting maize chromatin accessibility from DNA sequence"
+authors:
+  - family-names: Orme
+    given-names: Gregory
+repository-code: "https://github.com/gregorme2001/maize_chromatin_prediction"
+version: "0.1.0"
+abstract: "Comparisons of motif/five-mer ridge and sequence CNN prediction of maize cortex chromatin accessibility at held-out genomic regions."

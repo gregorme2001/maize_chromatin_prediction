@@ -1,0 +1,31 @@
+{
+  "n_ACRs": 9666,
+  "n_pairs": 495900,
+  "n_genotypes": 137,
+  "model_count": 13,
+  "models": [
+    "baseline",
+    "B73_core_TF",
+    "B73_core_word",
+    "B73_core_both",
+    "B73_context_TF",
+    "B73_context_word",
+    "B73_context_both",
+    "personalized_core_TF",
+    "personalized_core_word",
+    "personalized_core_both",
+    "personalized_context_TF",
+    "personalized_context_word",
+    "personalized_context_both"
+  ],
+  "subgroups": [
+    "all",
+    "core_variation_rich",
+    "context_variation_rich"
+  ],
+  "raw_CPM_response": true,
+  "fitted_on_actual_unbalanced_pairs": true,
+  "full_context_has_no_core_flank_coefficient_split": true,
+  "CNN_fitted": false,
+  "holdout_or_DTS_read": false
+}

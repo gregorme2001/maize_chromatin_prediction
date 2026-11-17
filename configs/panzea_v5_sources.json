@@ -1,0 +1,165 @@
+{
+  "source_folder": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/folder/364949363629",
+  "files": [
+    {
+      "chromosome": 1,
+      "name": "panzea_hapmap_282_chr1.vcf.gz",
+      "file_id": "2130578606035",
+      "bytes": 879752128,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130578606035",
+      "expected_sha1": "5c2b856a3b639cdeec9d3f643136b3dfab60713b"
+    },
+    {
+      "chromosome": 1,
+      "name": "panzea_hapmap_282_chr1.vcf.gz.tbi",
+      "file_id": "2130559398170",
+      "bytes": 272171,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130559398170",
+      "expected_sha1": "680232b79927c27457f84d6ecffb583841faa098"
+    },
+    {
+      "chromosome": 2,
+      "name": "panzea_hapmap_282_chr2.vcf.gz",
+      "file_id": "2130575682763",
+      "bytes": 686351906,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130575682763",
+      "expected_sha1": "93af77289fb5682b3077d80dedb2f702a03e7d1b"
+    },
+    {
+      "chromosome": 2,
+      "name": "panzea_hapmap_282_chr2.vcf.gz.tbi",
+      "file_id": "2130566946970",
+      "bytes": 216073,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130566946970",
+      "expected_sha1": "caf9a0726a3d185e903e38664975ba2acd8b942d"
+    },
+    {
+      "chromosome": 3,
+      "name": "panzea_hapmap_282_chr3.vcf.gz",
+      "file_id": "2130565447010",
+      "bytes": 664030955,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130565447010",
+      "expected_sha1": "82e0561b7685f599e9df8f2c0509dfbd3ffe7ded"
+    },
+    {
+      "chromosome": 3,
+      "name": "panzea_hapmap_282_chr3.vcf.gz.tbi",
+      "file_id": "2130567490839",
+      "bytes": 209432,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130567490839",
+      "expected_sha1": "5b8d2f02077c5ba08dfd519ac8ca90b475ddb59c"
+    },
+    {
+      "chromosome": 4,
+      "name": "panzea_hapmap_282_chr4.vcf.gz",
+      "file_id": "2130570899115",
+      "bytes": 685153194,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130570899115",
+      "expected_sha1": "8dd423f57da4e935fd0bdd0dbbc7510ea0f67aac"
+    },
+    {
+      "chromosome": 4,
+      "name": "panzea_hapmap_282_chr4.vcf.gz.tbi",
+      "file_id": "2130573639646",
+      "bytes": 218023,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130573639646",
+      "expected_sha1": "e1e38b925ab1c16f4ba795f2352ef418fc7295c1"
+    },
+    {
+      "chromosome": 5,
+      "name": "panzea_hapmap_282_chr5.vcf.gz",
+      "file_id": "2130579254281",
+      "bytes": 568338711,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130579254281",
+      "expected_sha1": "b2d1e5cb46e8a782b45834209bd237573ed2eac9"
+    },
+    {
+      "chromosome": 5,
+      "name": "panzea_hapmap_282_chr5.vcf.gz.tbi",
+      "file_id": "2130562468058",
+      "bytes": 196207,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130562468058",
+      "expected_sha1": "4c79ef3ef382464e3095d3bb9bec63c22e3b7a6f"
+    },
+    {
+      "chromosome": 6,
+      "name": "panzea_hapmap_282_chr6.vcf.gz",
+      "file_id": "2130565599717",
+      "bytes": 460079204,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130565599717",
+      "expected_sha1": "5a48e836e673be22cb18ea38c180f418bf5c2ead"
+    },
+    {
+      "chromosome": 6,
+      "name": "panzea_hapmap_282_chr6.vcf.gz.tbi",
+      "file_id": "2130576892054",
+      "bytes": 150435,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130576892054",
+      "expected_sha1": "2c6aff9a9ae82ea6457716cb851ef9f8989f5064"
+    },
+    {
+      "chromosome": 7,
+      "name": "panzea_hapmap_282_chr7.vcf.gz",
+      "file_id": "2130570462632",
+      "bytes": 486018751,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130570462632",
+      "expected_sha1": "a54b6d3a8a1449873a85de1de5deb9d5d4365676"
+    },
+    {
+      "chromosome": 7,
+      "name": "panzea_hapmap_282_chr7.vcf.gz.tbi",
+      "file_id": "2130570215608",
+      "bytes": 159854,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130570215608",
+      "expected_sha1": "9b20e9eb219e37f9ebc63fd4d719f78fe3d701c4"
+    },
+    {
+      "chromosome": 8,
+      "name": "panzea_hapmap_282_chr8.vcf.gz",
+      "file_id": "2130569793072",
+      "bytes": 469949139,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130569793072",
+      "expected_sha1": "506b5193eda1b35d088ae5e7b051ee25ed3934ef"
+    },
+    {
+      "chromosome": 8,
+      "name": "panzea_hapmap_282_chr8.vcf.gz.tbi",
+      "file_id": "2130578449406",
+      "bytes": 158544,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130578449406",
+      "expected_sha1": "32e0171d665af123f662c55ea3c7bd407d843f41"
+    },
+    {
+      "chromosome": 9,
+      "name": "panzea_hapmap_282_chr9.vcf.gz",
+      "file_id": "2130571207139",
+      "bytes": 439869790,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130571207139",
+      "expected_sha1": "f6578a8f75d6a37bf844990f84e00ba225a3377d"
+    },
+    {
+      "chromosome": 9,
+      "name": "panzea_hapmap_282_chr9.vcf.gz.tbi",
+      "file_id": "2130571957694",
+      "bytes": 141033,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130571957694",
+      "expected_sha1": "402e1db0ef87664782c6521a9cba48041b027ed7"
+    },
+    {
+      "chromosome": 10,
+      "name": "panzea_hapmap_282_chr10.vcf.gz",
+      "file_id": "2130575142039",
+      "bytes": 413000001,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130575142039",
+      "expected_sha1": "6ee990322ed48a61b76b0aa74aab0099ba5df4b0"
+    },
+    {
+      "chromosome": 10,
+      "name": "panzea_hapmap_282_chr10.vcf.gz.tbi",
+      "file_id": "2130565858948",
+      "bytes": 134514,
+      "public_file_page": "https://iastate.box.com/s/9edkm5f51q88ltzrb0hxaz4p36fdsr7q/file/2130565858948",
+      "expected_sha1": "6b8e92f30f5693cf2d6992295a7869e3de502653"
+    }
+  ]
+}

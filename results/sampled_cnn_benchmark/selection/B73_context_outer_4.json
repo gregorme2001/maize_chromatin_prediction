@@ -1,0 +1,30 @@
+{
+  "panel": "B73_context",
+  "outer_fold": 4,
+  "selected_l2": 1e-05,
+  "refit_epochs": 26,
+  "candidates": [
+    {
+      "candidate": 0,
+      "l2": 1e-05,
+      "pooled_inner_mse": 60.60353886380668,
+      "best_epochs": [
+        24,
+        29,
+        26
+      ],
+      "n_validation_observations": 393454
+    },
+    {
+      "candidate": 1,
+      "l2": 0.0001,
+      "pooled_inner_mse": 60.94056396107123,
+      "best_epochs": [
+        24,
+        9,
+        17
+      ],
+      "n_validation_observations": 393454
+    }
+  ]
+}

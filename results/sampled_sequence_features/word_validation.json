@@ -1,0 +1,11 @@
+{
+  "independent_word_PWM_checks": 144,
+  "sequence_extents": [
+    "core",
+    "context",
+    "flanks"
+  ],
+  "personalized_patterns_per_extent": 6,
+  "both_strands_and_positions_scanned": true,
+  "max_absolute_float32_error": 1.044019275475705e-07
+}

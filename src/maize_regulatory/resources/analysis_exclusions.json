@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "exclusions": [
+    {
+      "genotype": "CML341",
+      "reason": "Accessibility QC: 69.6% zero ACRs, 495 assigned cells, and strong influence on accessibility PCA",
+      "authorization": "User requested exclusion from future analyses on 2026-10-23",
+      "phenotype_association_used": false
+    }
+  ]
+}

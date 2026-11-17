@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Saved CNN comparison</title><style>body{font:17px/1.5 system-ui;max-width:1200px;margin:35px auto;padding:0 20px}table{border-collapse:collapse;font-size:15px}th,td{padding:8px 12px;border-bottom:1px solid #ddd;text-align:right}th:first-child,td:first-child{text-align:left}h1{font-size:27px}</style><h1>Earlier CNN predictions on the current evaluation sample</h1><p>No model was trained, tuned, refitted, or selected in this comparison. No phenotype or permanent-holdout values were read.</p><p>Every row evaluates the same 495,900 ACR-genotype observations at 9,666 ACRs and 137 development genotypes. The response is unchanged original-core, library-pooled cortex CPM.</p><p>Earlier predictions are saved outer-held-out predictions. ACRs and genotypes were explicitly matched by name. Frozen outer and inner fold manifests are identical; each evaluation ACR was absent from its corresponding earlier outer training fold. Recorded observed CPM agrees to 1e-12.</p><p>Earlier predictions equal the saved three-seed ACR prediction plus that outer fold&#x27;s genotype-specific centered ancestry contribution. All ten saved ensembles were reconstructed from their three saved seed prediction arrays.</p><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Model</th>
+      <th>Observation RMSE</th>
+      <th>ACR-average RMSE</th>
+      <th>ACR-average R2</th>
+      <th>Within-ACR R2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Current covariates only</td>
+      <td>7.748456</td>
+      <td>4.888121</td>
+      <td>0.027279</td>
+      <td>0.000208</td>
+    </tr>
+    <tr>
+      <td>Current TF ridge: B73 core</td>
+      <td>7.556236</td>
+      <td>4.527799</td>
+      <td>0.165399</td>
+      <td>0.000187</td>
+    </tr>
+    <tr>
+      <td>Current TF ridge: personalized core</td>
+      <td>7.555767</td>
+      <td>4.525719</td>
+      <td>0.166166</td>
+      <td>0.000092</td>
+    </tr>
+    <tr>
+      <td>Earlier CNN: B73 core</td>
+      <td>7.577269</td>
+      <td>4.563722</td>
+      <td>0.152103</td>
+      <td>-0.000016</td>
+    </tr>
+    <tr>
+      <td>Earlier CNN: B73 2,048 bp</td>
+      <td>7.324438</td>
+      <td>4.091248</td>
+      <td>0.318578</td>
+      <td>-0.000016</td>
+    </tr>
+    <tr>
+      <td>Current CNN: B73 core</td>
+      <td>7.746231</td>
+      <td>4.883676</td>
+      <td>0.029047</td>
+      <td>0.000159</td>
+    </tr>
+    <tr>
+      <td>Current CNN: personalized core</td>
+      <td>7.749307</td>
+      <td>4.889447</td>
+      <td>0.026751</td>
+      <td>0.000176</td>
+    </tr>
+    <tr>
+      <td>Current CNN: B73 2,000 bp</td>
+      <td>7.735766</td>
+      <td>4.858128</td>
+      <td>0.039179</td>
+      <td>0.000180</td>
+    </tr>
+    <tr>
+      <td>Current CNN: personalized 2,000 bp</td>
+      <td>7.742670</td>
+      <td>4.869006</td>
+      <td>0.034872</td>
+      <td>0.000075</td>
+    </tr>
+  </tbody>
+</table><p>This equalizes evaluation observations, not training data or architectures: earlier networks trained on roughly 108,843 ACRs across all folds, versus 9,666 in the current sample. Earlier models use B73 DNA, 2,048-bp context, an ACR-location channel, eight positional summary bins and three-seed averaging. Current models use 2,000-bp context, global mean/max pooling and one seed. Eligibility, available genotypes per ACR, learning rates and other settings also differ.</p><p>The comparison therefore cannot attribute a performance difference specifically to architecture, training-set size, or personalization. It is a retrospective comparison of completed procedures, not independent confirmation after model selection.</p><p>Observation RMSE averages squared errors over all available ACR-genotype observations. ACR-average RMSE averages observed and predicted CPM over the identical available genotypes at each ACR, then weights ACRs equally. Lower is better. Within-ACR R2 measures prediction of genotype deviations after centering each ACR for evaluation only.</p></html>

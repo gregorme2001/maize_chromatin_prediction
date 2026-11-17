@@ -1,0 +1,52 @@
+{
+  "checked_utc": "2026-11-16T21:16:09.537878+00:00",
+  "folds": [
+    {
+      "outer_fold": 1,
+      "earlier_training_ACRs": 87047,
+      "earlier_held_out_ACRs": 21796,
+      "current_evaluation_ACRs": 1905,
+      "current_evaluation_observations": 98354,
+      "evaluation_ACRs_in_corresponding_training_set": 0
+    },
+    {
+      "outer_fold": 2,
+      "earlier_training_ACRs": 85160,
+      "earlier_held_out_ACRs": 23683,
+      "current_evaluation_ACRs": 1958,
+      "current_evaluation_observations": 100556,
+      "evaluation_ACRs_in_corresponding_training_set": 0
+    },
+    {
+      "outer_fold": 3,
+      "earlier_training_ACRs": 90306,
+      "earlier_held_out_ACRs": 18537,
+      "current_evaluation_ACRs": 1867,
+      "current_evaluation_observations": 92973,
+      "evaluation_ACRs_in_corresponding_training_set": 0
+    },
+    {
+      "outer_fold": 4,
+      "earlier_training_ACRs": 85892,
+      "earlier_held_out_ACRs": 22951,
+      "current_evaluation_ACRs": 1984,
+      "current_evaluation_observations": 101571,
+      "evaluation_ACRs_in_corresponding_training_set": 0
+    },
+    {
+      "outer_fold": 5,
+      "earlier_training_ACRs": 86967,
+      "earlier_held_out_ACRs": 21876,
+      "current_evaluation_ACRs": 1952,
+      "current_evaluation_observations": 102446,
+      "evaluation_ACRs_in_corresponding_training_set": 0
+    }
+  ],
+  "checkpoint_training_hashes_verified": 30,
+  "saved_three_seed_predictions_reconstruct": true,
+  "inner_training_and_tuning_exclude_outer_evaluation_blocks": true,
+  "all_9666_evaluation_ACRs_have_no_overlap_with_their_prediction_models_training_set": true,
+  "evaluation_observation_count": 495900,
+  "permanent_holdout_or_DTS_read": false,
+  "models_fitted": 0
+}

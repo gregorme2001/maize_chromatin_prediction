@@ -1,0 +1,9 @@
+{
+  "primary_passed": 163,
+  "primary_skipped_modules": 4,
+  "native_neural_passed": 13,
+  "checked_mid_epoch_resume": true,
+  "checked_inner_selection_weighting": true,
+  "checked_outer_response_isolation": true,
+  "note": "Synthetic tests establish implementation behavior, not maize prediction accuracy"
+}

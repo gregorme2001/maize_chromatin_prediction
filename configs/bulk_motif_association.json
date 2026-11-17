@@ -1,0 +1,16 @@
+{
+  "seed": 20261023,
+  "gc_spline_df": 4,
+  "gc_knot_quantiles": [0, 0.25, 0.5, 0.75, 1],
+  "primary_block_bp": 5000000,
+  "sensitivity_block_bp": 10000000,
+  "fdr_method": "Benjamini-Yekutieli",
+  "fdr_alpha": 0.05,
+  "motif_batch_size": 48,
+  "example_motifs": 6,
+  "response": "natural log(1 + arithmetic mean CPM across eligible development genotypes); average before log",
+  "baseline": "intercept + natural cubic GC spline (4 df excluding intercept) + natural log sequence length + chromosome indicators",
+  "comparisons": "one signed, existing raw B73 motif-score column at a time; no cumulative motif selection",
+  "inference": "CR1 genomic-block clustered standard errors, Student t with G-1 df; primary family is all motifs in full development response at 5 Mb",
+  "subset_checks": "same fixed disjoint A/B development halves as motif_coaccessibility; descriptive consistency, not independent replication"
+}

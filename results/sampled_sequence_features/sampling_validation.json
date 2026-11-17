@@ -1,0 +1,8 @@
+{
+  "draw_reproduced_exactly": true,
+  "all_per_block_quotas_correct": true,
+  "all_ACRs_have_at_least_20_usable_genotypes": true,
+  "sum_inverse_inclusion_probabilities": 19201.0,
+  "eligible_population_ACRs": 19201,
+  "all_pair_rows_preserve_frozen_outer_folds": true
+}

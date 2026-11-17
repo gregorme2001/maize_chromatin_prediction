@@ -1,0 +1,76 @@
+{
+  "config": {
+    "panels": [
+      "B73_core",
+      "personalized_core",
+      "B73_context",
+      "personalized_context"
+    ],
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "candidate_l2": [
+      1e-05,
+      0.0001
+    ],
+    "architecture": {
+      "width": 64,
+      "depth": 3,
+      "dropout": 0.1,
+      "stem_pool": 8
+    },
+    "learning_rate": 0.001,
+    "batch_size": 512,
+    "max_epochs": 30,
+    "warmup_epochs": 15,
+    "patience": 8,
+    "inner_seed_base": 42000,
+    "outer_seed_base": 101000,
+    "refit_epoch_rule": "median_best_epoch_of_winning_candidate_inner_fits",
+    "precision": "float16_sequence_ops_float32_weights_and_loss",
+    "response": "unchanged_original_core_raw_cortex_CPM",
+    "weights": "equal_original_ACR_genotype_observations",
+    "job_order": "outer_fold_then_panel",
+    "CNN_core_indicator": false,
+    "reverse_complement_training": true,
+    "reverse_complement_prediction_average": true,
+    "nuisance_coefficients": "global_joint_unpenalized_25_term_basis",
+    "baseline_is_inner_candidate": false,
+    "outer_seeds_per_fit": 1
+  },
+  "inputs": {
+    "results/sampled_sequence_features/selected_acrs.parquet": "d5a3c697ba9bd38521e9ccde57a849acc981b07a8c62b167e139780d00780e81",
+    "results/sampled_sequence_features/feature_lookup.parquet": "6fc0043e1ab46c5ba68d12522c82c87fb13a15a6b5be695ce08806b163bc396f",
+    "results/sampled_sequence_features/genotypes.csv": "e2e9aa936de49e0bcd0029a9cdcbaf14621ca53feaa2f5225981643093ca1793",
+    "results/sampled_sequence_features/sample_receipt.json": "eb8d20191e114bdd6d99684218d6811c8d5a415b4a64bcb566e559b63683387d",
+    "results/sampled_sequence_features/sequence_receipt.json": "856e328b17c2e02b1f9614e115ac6670e2105bf3da31d4080079ec157bf65485",
+    "results/sampled_sequence_features/fold_manifest.json": "5f72c081f74147167298f4f53c884c1203cd10c4209e8de7debe4a36a4180399",
+    "data/intermediate/sampled_linear_benchmark/observations.npz": "cb2988db94be160f77ccb42f6db07fb6fbc6b0a12e6799524526516c19b14ddf",
+    "data/intermediate/sampled_linear_benchmark/pattern_ids.npz": "aca8201f2606fb86f2af338f553218985020c47ea76d0ae6022a2ef7a60edc0c",
+    "data/intermediate/sampled_sequence_features/core_patterns.parquet": "13af01ee5d843be651212e0cb6409dc8e717cbfdb9449452d37c1f36b78ca617",
+    "data/intermediate/sampled_sequence_features/context_patterns.parquet": "a716dcc9140ea54ef04bb0a85a4841863c57d4de7b04fa664a1a7d24e56e6457",
+    "data/intermediate/sampled_cnn_preflight/core_codes.npy": "2532cee4349227b60ab3e8469deaf1a56b513916b261b8f8c6baf8cbe2a1f7ea",
+    "data/intermediate/sampled_cnn_preflight/context_codes.npy": "d6f70070145ab022f860106220ee6f61b2334f7ecb8761151e897043a4c3a533",
+    "data/maize_ancestry_pcs.parquet": "fee45e45d81dfd19504f4996884cd1d81a56b0ad974b609f03e27462f1e191e7",
+    "data/intermediate/reference_cortex/counts.int32": "a44745050268a019079f1ab9bbd7decdfeaddb37e0c30ca943c0450144e5717f",
+    "results/sequence_cnn_benchmark/genotype_coverage.csv": "4f9ee2ee2df3436dd4899ff31328d829725d4b1ec2309bc6b6527e749ae76f83"
+  },
+  "code": {
+    "scripts/run_sampled_cnn.py": "294c6fe018a6123fa2a111aa74dc11b94244a20c311d22d8f6a39e2830e7c43e",
+    "scripts/launch_sampled_cnn.py": "4aea0c4f6183a3710d938541a8f667427158a1d8208fa0e7d6c1dad36f457eac",
+    "src/maize_regulatory/sampled_cnn.py": "117ca4e77c573a0a6ffacc7b36727c190daae391ecdb20e391c220fa5c979a01",
+    "src/maize_regulatory/sampled_cnn_precision.py": "ac3093527401a5c4a359590c3c0db17b576d87a8465bde9679abda9b4305f91d",
+    "src/maize_regulatory/sampled_cnn_run.py": "a6d4c10615c4199bf5aeb82994a070d22183277206d51ae084efc69db81b37c1",
+    "src/maize_regulatory/sampled_linear.py": "8e329ed974da2ad4a108bfbdbfaf89e5dcb0c9993184f8fec5ac6e6c645602d4",
+    "src/maize_regulatory/cohort.py": "85fbe9cc7486ab253ec909972b612ee0455c2a5617ffc4a9f55fac980b6fdcbb",
+    "src/maize_regulatory/sample_identity.py": "5c210cb3356e4ca7441dbeab558ae82c0f88c87f895c969b774958cd355f13f2"
+  },
+  "torch": "2.15.0",
+  "numpy": "2.5.4",
+  "device": "mps",
+  "n_ACRs": 9666,
+  "n_observations": 495900,
+  "n_genotypes": 137,
+  "verified_raw_CPM_values": 495900,
+  "cohort_or_response_changed": false,
+  "holdout_or_DTS_read": false
+}
